@@ -1,0 +1,19 @@
+@media screen and (min-width: 900px) {
+  .main {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (prefers-color-scheme: dark) {}
+}
+
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  @media (prefers-color-scheme: dark) {}
+}
+
+@media screen and (max-width: 520px) {
+  @media (prefers-color-scheme: dark) {}
+}

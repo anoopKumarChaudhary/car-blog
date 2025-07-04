@@ -1,0 +1,140 @@
+@media screen and (min-width: 900px) {
+    .main {
+        display: flex;
+        height: 85vh;
+        width: 100vw;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: rgb(0, 0, 0) 0 0 70px 0;
+    }
+
+    .head {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 130px;
+        background-image: linear-gradient(to right, white, rgb(255, 255, 255), white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .content {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-size: 40px;
+        width: 40vw;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+    .btndiv {
+        position: absolute;
+        top: 85%;
+        left: 10%;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px 80px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgb(255, 68, 0, 0.3);
+
+    }
+
+    @media (prefers-color-scheme: dark) {}
+}
+
+@media screen and (max-width: 900px) and (min-width: 520px) {
+    .main {
+        display: flex;
+        height: 85vh;
+        width: 100vw;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: rgb(0, 0, 0) 0 0 70px 0;
+    }
+
+    .head {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 130px;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+    .content {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-size: 40px;
+        width: 80vw;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+    @media (prefers-color-scheme: dark) {}
+}
+
+@media screen and (max-width: 520px) {
+    .main {
+        display: flex;
+        height: calc(100vh - 140px);
+        width: 100vw;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: rgb(0, 0, 0) 0 0 70px 0;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .head {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        font-size: 75px;
+        color: rgb(255, 255, 255, 0.8);
+    }
+
+    .content {
+        position: absolute;
+        top: 40%;
+        left: 2%;
+        font-size: 28px;
+        width: 80vw;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+    .btndiv {
+        position: absolute;
+        top: 85%;
+        left: 2%;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 60px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgb(255, 68, 0, 0.3);
+
+    }
+
+    @media (prefers-color-scheme: dark) {}
+}
