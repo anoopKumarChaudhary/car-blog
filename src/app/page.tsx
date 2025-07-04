@@ -106,7 +106,7 @@ const CardSwiper: React.FC = () => {
         slidesPerView={1}
         loop
         speed={1200}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
       >
         {selectedCards.map((card) => (
           <SwiperSlide key={card.id}>

@@ -1,3 +1,17 @@
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .main {
         display: flex;
@@ -15,10 +29,19 @@
         top: 10%;
         left: 10%;
         font-size: 130px;
-        background-image: linear-gradient(to right, rgb(245, 67, 67), rgb(255, 255, 255), white);
-        -webkit-background-clip: text;
+        font-weight: 900;
+        background-image: linear-gradient(90deg,
+                #ff6a00,
+                #ee0979,
+                #8e2de2,
+                #4a00e0,
+                #00c9ff,
+                #92fe9d);
+        background-size: 300%;
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
+        animation: gradientMove 4s ease infinite;
     }
 
     .content {
@@ -27,7 +50,8 @@
         left: 10%;
         font-size: 40px;
         width: 40vw;
-        color: rgb(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255);
+        font-weight: 500;
     }
 
     .btndiv {
@@ -46,8 +70,14 @@
         border-radius: 10px;
         border: none;
         outline: none;
-        background-color: rgb(255, 68, 0, 0.3);
+        color: white;
+        cursor: pointer;
 
+        background: linear-gradient(135deg,
+                rgba(0, 238, 255, 0.6),
+                rgba(255, 68, 0, 0.6),
+                rgba(0, 68, 255, 0.6));
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     @media (prefers-color-scheme: dark) {}
@@ -102,38 +132,57 @@
     .head {
         position: absolute;
         top: 10%;
-        left: 2%;
-        font-size: 75px;
-        color: rgb(255, 255, 255, 0.8);
+        left: 3%;
+        font-size: 65px;
+        font-weight: 900;
+        background-image: linear-gradient(90deg,
+                #ff6a00,
+                #ee0979,
+                #8e2de2,
+                #4a00e0,
+                #00c9ff,
+                #92fe9d);
+        background-size: 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientMove 4s ease infinite;
     }
 
     .content {
         position: absolute;
         top: 40%;
-        left: 2%;
-        font-size: 28px;
+        left: 3%;
+        font-size: 17px;
         width: 80vw;
-        color: rgb(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255);
+        font-weight: 500;
     }
 
     .btndiv {
         position: absolute;
         top: 85%;
-        left: 2%;
+        left: 3%;
     }
 
     .btn {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 20px 60px;
+        padding: 15px 50px;
         font-size: 18px;
         font-weight: bold;
         border-radius: 10px;
         border: none;
         outline: none;
-        background-color: rgb(255, 68, 0, 0.3);
+        color: white;
+        cursor: pointer;
 
+        background: linear-gradient(135deg,
+                rgba(0, 238, 255, 0.6),
+                rgba(255, 68, 0, 0.6),
+                rgba(0, 68, 255, 0.6));
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     @media (prefers-color-scheme: dark) {}
