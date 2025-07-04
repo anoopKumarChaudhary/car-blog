@@ -16,7 +16,7 @@ const CarCard: React.FC<Data> = ({ url, name, content }) => {
     <div style={{ backgroundImage: `url(${url})` }} className={styles.main}>
       <motion.h1
         className={styles.head}
-        initial={{ x: -120, opacity: 0 }}
+        initial={{ x: -60, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{
           type: "spring",
@@ -31,7 +31,7 @@ const CarCard: React.FC<Data> = ({ url, name, content }) => {
 
       <motion.h2
         className={styles.content}
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ x: 60, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{
           type: "spring",
